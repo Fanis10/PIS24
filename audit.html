@@ -1,0 +1,951 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="">
+	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/jquery-3.5.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/base.min.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/blocks.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/modules.css" />
+	<link rel="stylesheet" type="text/css" href="https://degorov.ru/1base/wp-content/themes/Goodini/assets/css/anim.css" />
+	<link rel="stylesheet" href="css/nouislider.css">
+	<link rel="stylesheet" href="css/style.min.css">
+	<title>Консалтинг и аудит</title>
+</head>
+
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+    <div class="container-fluid">
+        <div class="header__inner">
+            <div class="header__left">
+                <a class="header__logo" href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+            </div>
+            <div class="header__right">
+                <ul>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Главная</a></li>
+                </ul>
+                <button class="header__btn btn btn-blue">
+                    <span>ОСТАВИТЬ ЗАЯВКУ</span>
+                </button>
+                <div class="header__select">
+                    <div class="header__select-icon">
+                        <img src="img/location.svg" alt="">
+                    </div>
+                    <div class="select__wrap">
+                        <div class="select__list-default">
+                            <div class="select__current">Выберите город</div>
+                            <div class="select-arrow">
+                                <img src="img/select-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="select__list">
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Москва">Москва</option>
+                        </div>
+                    </div>
+                </div>
+                <div class="header__socials">
+                    <a class="header__social" href="">
+                        <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15.8342 18.2373C14.7381 19.2215 14.0671 20.5929 13.9626 22.0623L13.6656 26.2396C13.5923 27.2707 14.46 28.0706 15.1935 27.3421C17.5045 25.1335 21.0667 24.9005 23.6458 26.7892L27.465 29.5861C28.983 30.4321 30.0525 29.9866 30.462 28.1896L35.8948 2.73266C35.8949 2.73198 35.8952 2.73136 35.8957 2.73087C35.8962 2.73038 35.8966 2.72974 35.8967 2.72906C36.3776 0.485844 35.0848 -0.391293 33.606 0.15912L1.67099 12.3856C-0.508508 13.2316 -0.475508 14.4466 1.30049 14.9971L5.08183 16.1733C7.86436 17.0388 10.886 16.6475 13.3563 15.1018L28.4295 5.67012C29.322 5.07912 30.1335 5.40612 29.466 5.99712L15.8342 18.2373Z" fill="#1397DE"/>
+                        </svg>
+                    </a>
+                    <a class="header__social" href="">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.0045 0H17.9955C8.07075 0 0 8.073 0 18C0 21.4148 0.954419 24.6129 2.61524 27.3347C3.09297 28.1176 3.25347 29.0668 2.96178 29.9363C2.22383 32.1361 4.29919 34.2412 6.50926 33.5347L6.74983 33.4578C7.60481 33.1845 8.53053 33.327 9.31555 33.7622C11.894 35.1917 14.8507 36 18.0045 36C27.9292 36 36 27.9247 36 18C36 8.07525 27.9292 0 18.0045 0ZM28.4782 25.4182C28.044 26.6445 26.3205 27.6615 24.9457 27.9585C24.0052 28.1587 22.7768 28.3185 18.6413 26.604C13.3515 24.4125 9.945 19.0372 9.6795 18.6885C9.42525 18.3398 7.542 15.8422 7.542 13.2593C7.542 10.6763 8.85375 9.4185 9.3825 8.8785C9.81675 8.43525 10.5345 8.23275 11.223 8.23275C11.4458 8.23275 11.646 8.244 11.826 8.253C12.3547 8.2755 12.6202 8.307 12.969 9.14175C13.4032 10.188 14.4607 12.771 14.5868 13.0365C14.715 13.302 14.8433 13.662 14.6632 14.0108C14.4945 14.3708 14.346 14.5305 14.0805 14.8365C13.815 15.1425 13.563 15.3765 13.2975 15.705C13.0545 15.9908 12.78 16.2968 13.086 16.8255C13.392 17.343 14.4495 19.0687 16.0065 20.4548C18.0157 22.2435 19.6447 22.815 20.2275 23.058C20.6617 23.238 21.1793 23.1953 21.4965 22.8577C21.8993 22.4235 22.3965 21.7035 22.9028 20.9948C23.2628 20.4862 23.7173 20.4232 24.1943 20.6032C24.6803 20.772 27.252 22.0432 27.7808 22.3065C28.3095 22.572 28.6582 22.698 28.7865 22.9207C28.9125 23.1435 28.9125 24.1898 28.4782 25.4182Z" fill="#1397DE"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="header__group">
+                    <a class="header__phone" href="tel:78127048110">
+                        <span>+7-812-704-81-10</span>
+                    </a>
+                    <button class="header__btn2 btn">
+                        <span>Заказать звонок</span>
+                    </button>
+                </div>
+            </div>
+            <div class="header__mob">
+                <div class="header__select">
+                    <div class="header__select-icon">
+                        <img src="img/location.svg" alt="">
+                    </div>
+                    <div class="select__wrap">
+                        <div class="select__list-default">
+                            <div class="select__current">Выберите город</div>
+                            <div class="select-arrow">
+                                <img src="img/select-arrow.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="select__list">
+                            <option value="Санкт-Петербург">Санкт-Петербург</option>
+                            <option value="Москва">Москва</option>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu-btn">
+                    <div class="burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+		<aside class="sidebar">
+			<div class="sidebar__inner">
+				<div class="menu2-btn">
+					<div class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+					<div class="menu-text">МЕНЮ</div>
+				</div>
+				<div class="sidebar__text">IT CARE FOR PEOPLE</div>
+			</div>
+			<div class="sidebar__menu">
+				<ul>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Главная</a></li>
+					<li><a href="">Главная</a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<main class="content">
+			<section class="page-top">
+				<div class="container-fluid">
+					<div class="page-top__inner">
+						<div class="page-top__desc top-animation _anim-items anim-no-hide">
+							<h1>
+								Углубленный консалтинг и аудит
+								<span class="text-color">от ведущих экспертов IT-отрасли</span>
+							</h1>
+							<p>
+								Решения для оптимизации затрат IT-инфраструктуры
+								<strong>до 40%</strong>
+							</p>
+							<div class="page-top__info page-top__info3">
+								<a class="page-top__btn btn btn-blue" href="">
+									<span>Рассчитать стоимость</span>
+								</a>
+								<div class="page-top__info-text">Менеджер перезванивает не дольше 2-х минут</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="lazyload page-top__img13 left-animation _anim-items anim-no-hide" data-src="img/page-top__img13.webp" alt="">
+			</section>
+			<section class="info">
+				<div class="container-fluid">
+					<div class="info__inner">
+						<div class="diagram">
+							<div class="diagram__images">
+								<div class="diagram__circle">
+									<img class="lazyload" data-src="img/info-img.png" alt="">
+								</div>
+								<div id="showrndimages"></div>
+							</div>
+							<div class="diagram__items">
+								<div class="diagram__item left-item right-animation _anim-items anim-no-hide">
+									<div class="diagram__item-desc">
+										<strong>30+</strong>
+										<p>аудитов проведено в компаниях с 300+ сотрудников</p>
+									</div>
+									<div class="diagram__item-img">
+										<img class="lazyload" data-src="img/diagram__item-img.webp" alt="">
+									</div>
+								</div>
+								<div class="diagram__item left-item right-animation _anim-items anim-no-hide">
+									<div class="diagram__item-desc">
+										<strong>20</strong>
+										<p>лет в <br>корпоративном IT</p>
+									</div>
+									<div class="diagram__item-img">
+										<img class="lazyload" data-src="img/diagram__item-img2.webp" alt="">
+									</div>
+								</div>
+								<div class="diagram__item left-item right-animation _anim-items anim-no-hide">
+									<div class="diagram__item-desc">
+										<strong>с 2011</strong>
+										<p>на рынке, как компания</p>
+									</div>
+									<div class="diagram__item-img">
+										<img class="lazyload" data-src="img/diagram__item-img3.webp" alt="">
+									</div>
+								</div>
+								<div class="diagram__item right-item left-animation _anim-items anim-no-hide">
+									<div class="diagram__item-desc">
+										<strong>2000+</strong>
+										<p>заявок выполняем в месяц, время реакции 59 секунд</p>
+									</div>
+									<div class="diagram__item-img">
+										<img class="lazyload" data-src="img/diagram__item-img4.webp" alt="">
+									</div>
+								</div>
+								<div class="diagram__item right-item left-animation _anim-items anim-no-hide">
+									<div class="diagram__item-desc">
+										<strong>100+</strong>
+										<p>проектов реализовано в различных сферах бизнеса</p>
+									</div>
+									<div class="diagram__item-img">
+										<img class="lazyload" data-src="img/diagram__item-img5.webp" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="services-audit services4">
+				<div class="container-fluid">
+					<div class="services-audit__inner">
+						<h2>Выдаем понятный и эффективный аудит Ваших бизнес процессов</h2>
+						<div class="services-audit__cards right-animation _anim-items anim-no-hide">
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img15.webp" alt="">
+								</div>
+								<div class="services-card__title">Легальности ПО, серверной и сетевой инфраструктуры</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img16.webp" alt="">
+								</div>
+								<div class="services-card__title">IT-стратегии <br> и IT-бюджета</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img17.webp" alt="">
+								</div>
+								<div class="services-card__title">Службы технической поддержки</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img18.webp" alt="">
+								</div>
+								<div class="services-card__title">Штатной структуры IT департамента</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img19.webp" alt="">
+								</div>
+								<div class="services-card__title">Информационной безопасности</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+							<div class="services-card">
+								<div class="services-card__icon">
+									<img src="img/services-card__img20.webp" alt="">
+								</div>
+								<div class="services-card__title">Подбора и управления IT-персоналом</div>
+								<a class="services-card__link" href="">
+									<span>рассчитать стоимость</span>
+									<i>
+										<svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path d="M9.35492 14.119C9.61828 14.1153 9.86946 14.0076 10.0538 13.8195L15.7047 8.17858C16.0962 7.7903 16.0988 7.15815 15.7105 6.76665C15.7086 6.76471 15.7066 6.76277 15.7047 6.76086L10.0538 1.11997C9.63498 0.76131 9.00471 0.810068 8.64604 1.2289C8.32595 1.60269 8.32595 2.15395 8.64604 2.52771L13.5881 7.46974L8.59614 12.4118C8.20903 12.8012 8.20903 13.4301 8.59614 13.8195C8.79488 14.0228 9.07086 14.1318 9.35492 14.119Z" fill="#0072AF"></path>
+											<path d="M0.998387 8.46812H14.9758C15.5272 8.46812 15.9742 8.02111 15.9742 7.46971C15.9742 6.91832 15.5272 6.47131 14.9758 6.47131H0.998387C0.446993 6.47131 -1.43051e-05 6.91832 -1.43051e-05 7.46971C-1.43051e-05 8.02111 0.446993 8.46812 0.998387 8.46812Z" fill="#0072AF"></path>
+										</svg>
+									</i>
+								</a>
+							</div>
+						</div>
+						<div class="services-audit__group">
+							<a class="services-audit__btn btn btn-blue" href="">
+								<span>консультация</span>
+							</a>
+							<div class="services-audit__info">Если не знаете, с чего лучше начать - запросите бесплатную консультацию</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="advantages advantages-audit">
+				<div class="container-fluid">
+					<div class="advantages__inner">
+						<h2>Обеспечиваем гарантированный результат по отлаженной схеме работы</h2>
+						<div class="advantages__cards left-animation _anim-items anim-no-hide">
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" ls-is-cached lazyload" data-src="img/advantage-card__img15.svg" alt="">
+								</div>
+								<div class="advantage-card__title">Инвентаризация</div>
+								<div class="advantage-card__text">Компьютерной техники, сетевого оборудования и ПО</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" ls-is-cached lazyload" data-src="img/advantage-card__img16.svg" alt="">
+								</div>
+								<div class="advantage-card__title">Экспертная оценка</div>
+								<div class="advantage-card__text">Программный и аппаратный анализ, соответствие требованиям</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" ls-is-cached lazyload" data-src="img/advantage-card__img17.svg" alt="">
+								</div>
+								<div class="advantage-card__title">Анализ эффективности</div>
+								<div class="advantage-card__text">Определение малоэффективных бизнес-процессов и проблемных мест инфраструктуры</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" ls-is-cached lazyload" data-src="img/advantage-card__img18.svg" alt="">
+								</div>
+								<div class="advantage-card__title">Оценка безопасности</div>
+								<div class="advantage-card__text">Проверка конфиденциальности и доступа к данным, аппаратных и программных систем безопасности</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" lazyload" data-src="img/advantage-card__img19.svg" alt="">
+								</div>
+								<div class="advantage-card__title">Консалтинг по оптимизации</div>
+								<div class="advantage-card__text">Рекомендации по реорганизации IT-службы, разработка корпоративных стандартов и модернизация инфраструктуры</div>
+							</div>
+						</div>
+						<div class="advantages__group">
+							<a class="advantages__btn btn btn-blue" href="">
+								<span>заказать аудит</span>
+							</a>
+							<div class="advantages__info">
+								После каждого этапа мы предоставляем отчет. Это не формальность, а хорошо структурированная инструкция по оптимизации
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="lazyload advantages-audit__img" data-src="img/advantages__img3.webp" alt="">
+			</section>
+			<section class="portfolio">
+				<div class="container-fluid">
+					<div class="portfolio__inner">
+						<h2>Посмотрите наше портфолио</h2>
+						<div class="portfolio__slider">
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Техническая поддержка и обслуживание офиса (80 рабочих мест)</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>Компания “Volvo Cars”</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>
+												ИТ-обслуживание офиса<br>
+												(1-я и 2-я линия поддержки),<br>
+												Аутсорсинг технической поддержки (HelpDesk),<br>
+												Аутстаффинг ИТ-персонала (специалист 1-й линии)
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>28 февраля 2022 г.</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img2.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img2.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img3.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img3.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img4.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img4.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo2.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Внедрение серверной и сетевой инфраструктуры на базе оборудования Fujitsu и Cisco. Создание отказоустойчивого кластера виртуализации на базе VMware</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>Группа компаний “Хоссер”</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>
+												Аудит текущей ИТ-инфраструктуры,<br>
+												Проектирование серверной и сетевой ИТ-инфраструктуры,<br>
+												Создание отказоустойчивого кластера,<br>
+												Миграция данных со старой инфраструктуры на новую.
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>3 месяца + постпроектное обслуживание по настоящее время</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img5.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img5.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img6.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img6.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img7.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img7.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img8.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img8.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo3.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Создание облачной ИТ-инфраструктуры</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>Компания TECHNOLIGHT, г. Москва</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>Создание виртуальной отказоустойчивой инфраструктуры в облаке, Миграция данных со старой инфраструктуры на новую.</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>3 дня + постпроектное обслуживание по настоящее время</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img9.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img9.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img10.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img10.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img11.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img11.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img12.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img12.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo4.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Организация видеоконференцсвязи (ВКС) на базе оборудования Polycom</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>АНО “Транспортная дирекция чемпионата мира по футболу 2018 года”</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>
+												Создание и внедрение комплекса средств ВКС,<br>
+												Поставка оборудования для организации проекта,<br>
+												Монтаж и настройка «под ключ» системы ВКС в 8 городах, принимающих матчи чемпионата мира по футболу 2018 года.
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>3 месяца + постпроектное обслуживание</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img13.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img13.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img14.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img14.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img15.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img15.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img16.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img16.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo5.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Техническая поддержка и обслуживание центрального офиса и стройплощадок в Санкт-Петербурге и ЛО (120 рабочих мест)</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>Группа компаний “ПИК”</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>
+												ИТ-обслуживание офисов (1-я линия поддержки),<br>
+												Аутсорсинг технической поддержки (HelpDesk).
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>по настоящее время</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img17.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img17.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img18.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img18.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img19.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img19.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img20.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img20.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio-card">
+								<div class="portfolio-card__desc">
+									<div class="portfolio-card__logo">
+										<img src="img/portfolio-logo6.webp" alt="">
+									</div>
+									<div class="portfolio-card__text">Реорганизация серверной и сетевой ИТ-инфраструктуры на базе оборудования Fujitsu и Cisco</div>
+									<div class="portfolio-card__items">
+										<div class="portfolio-card__item">
+											<strong>Заказчик:</strong>
+											<p>
+												Компания “ДАНОН РОССИЯ”,<br>
+												г. Санкт-Петербург,<br>
+												Молочный комбинат “Ялуторовский”,<br>
+												г. Ялуторовск
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Работы:</strong>
+											<p>
+												Аудит текущей ИТ-инфраструктуры,<br>
+												Проектирование и создание ИТ-инфраструктуры,<br>
+												Поставка, монтаж и настройка нового оборудования,<br>
+												Миграция данных со старой инфраструктуры на новую
+											</p>
+										</div>
+										<div class="portfolio-card__item">
+											<strong>Срок реализации:</strong>
+											<p>2 месяца + постпроектное обслуживание по настоящее время</p>
+										</div>
+									</div>
+								</div>
+								<div class="portfolio-card__images">
+									<div class="portfolio-card__grid">
+										<a class="portfolio-card__img" href="img/portfolio__img21.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img21.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img22.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img22.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img23.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img23.webp" alt="">
+										</a>
+										<a class="portfolio-card__img" href="img/portfolio__img24.webp" data-fancybox="portfolio">
+											<img class="lazyload" data-src="img/portfolio__img24.webp" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio__slider-nav">
+							<div class="portfolio__prev">
+								<img src="img/prev.svg" alt="">
+							</div>
+							<div class="portfolio__dots"></div>
+							<div class="portfolio__next">
+								<img src="img/next.svg" alt="">
+							</div>
+						</div>
+						<div class="portfolio__bottom">
+							<a class="portfolio__btn btn btn-blue" href="">
+								<span>Смотреть портфолио</span>
+							</a>
+							<div class="portfolio__info">
+								Обеспечиваем одинаково высокий сервис обслуживания как для небольших компаний от 15 ПК, так и для крупного бизнеса на 500+ рабочих мест  
+							</div>
+						</div>
+					</div>
+				</div>
+				<img class="lazyload portfolio__img2" data-src="img/portfolio__img.svg" alt="">
+				<img class="lazyload portfolio__img3" data-src="img/portfolio__img2.svg" alt="">
+			</section>
+			<section class="offer">
+				<div class="container-fluid">
+					<div class="offer__inner">
+						<h2>
+							Запросите коммерческое предложение
+							<i>
+								<img class="lazyload left-animation _anim-items anim-no-hide" src="img/offer-img.webp" alt="">
+							</i>
+						</h2>
+						<ul>
+							<li>
+								<i>
+									<img src="img/check2.svg" alt="">
+								</i>
+								<span>Мы проконсультируем</span>
+							</li>
+							<li>
+								<i>
+									<img src="img/check2.svg" alt="">
+								</i>
+								<span>Предложим оптимальный вариант исходя из бюджета и потребностей</span>
+							</li>
+							<li>
+								<i>
+									<img src="img/check2.svg" alt="">
+								</i>
+								<span>Просчитаем все с точностью до 1 рубля</span>
+							</li>
+						</ul>
+						<a class="offer__btn btn btn-blue" href="">
+							<span>запросить КП</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<section class="advantages advantages4 advantages-audit2" style="background-image: url(img/advantages-bg3.webp)">
+				<div class="container-fluid">
+					<div class="advantages__inner">
+						<h2>5 факторов из-за которых с нами сотрудничают на постоянной основе</h2>
+						<div class="advantages__cards right-animation _anim-items anim-no-hide">
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" lazyload" data-src="img/advantage-card__img16.webp" alt="">
+								</div>
+								<div class="advantage-card__text"><strong>Умеем работать по-крупному,</strong> поскольку сами выходцы из B2B. Нам не нужно объяснять, кто и чем занимается и долго вводить в курс дела</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" lazyload" data-src="img/advantage-card__img17.webp" alt="">
+								</div>
+								<div class="advantage-card__text"><strong>Постепенно и уверенно перешли на “сложные” заказы,</strong> поэтому теперь они для нас просто “обычные”. Доверяя нам, клиент гарантирует себе результат</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" lazyload" data-src="img/advantage-card__img18.webp" alt="">
+								</div>
+								<div class="advantage-card__text"><strong>Нас можно попросить объяснить все простым языком</strong> и мы с радостью это сделаем. Никакой “короны на голове”, только компетентность и уважение</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" lazyload" data-src="img/advantage-card__img19.webp" alt="">
+								</div>
+								<div class="advantage-card__text"><strong>Экономим время.</strong> Приходим в компанию и сразу работаем: проводим интервью с сотрудниками, исследуем инфраструктуру</div>
+							</div>
+							<div class="advantage-card">
+								<div class="advantage-card__icon">
+									<img class=" ls-is-cached lazyload" data-src="img/advantage-card__img20.webp" alt="">
+								</div>
+								<div class="advantage-card__text"><strong>Имеем и используем инструменты аудита,</strong> которых нет у других аудиторских компаний. Например, собственные библиотеки данных и программное моделирование отказоустойчивости</div>
+							</div>
+						</div>
+						<div class="advantages__group">
+							<a class="advantages__btn btn btn-blue" href="">
+								<span>Рассчитать</span>
+							</a>
+							<div class="advantages__info">
+								Рассчитаем вашу выгоду от сотрудничества с нами в рублях, а не в вероятностях
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="audit" style="background-image: url(img/audit-bg.webp)">
+				<div class="container-fluid">
+					<div class="audit__inner">
+						<div class="audit__left">
+							<div class="audit__group">
+								<h2>
+									Проведем бесплатный экспресс-аудит вашей IT-инфраструктуры<br>
+									<span>(компьютеров, серверов, ПО и сетей)</span>
+								</h2>
+								<div class="audit__info">
+									<div class="audit__info-img">
+										<img src="img/audit-img.webp" alt="">
+									</div>
+									<div class="audit__text">Вы получите отчет о текущем состоянии сети и рекомендации по улучшению</div>
+								</div>
+							</div>
+						</div>
+						<div class="audit__right">
+							<div class="form">
+								<div class="form-head">Оставьте заявку</div>
+								<form class="form_block" method="POST" action="">
+									<div class="form-field form-group">
+										<input type="text" name="name1" class="form-control" placeholder="Ваше имя"/>
+									</div>
+									<div class="form-field form-group">
+										<input type="tel" name="phone" class="form-control required  inp" placeholder="Ваш телефон*"/>
+									</div>
+									<div class="form-text">Количество мест ограничено. В месяц выделяем всего 20 мест на бесптаный аудиты</div>
+									<button class="form-btn btn btn-blue" type="submit" name="send">
+										<span>Бесплатный аудит</span>
+									</button>
+									<div class="agreement-check">
+										<input class="agreement" type="checkbox" checked="checked" name="Agreement">
+										<label class="agreement-label">Подтверждаю свои данные и даю своё согласие на их обработку</label>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div class="audit__img">
+							<img class="lazyload bottom-animation _anim-items anim-no-hide" data-src="img/audit-img2.webp" alt="">
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+    <div class="container-fluid">
+        <div class="footer__inner">
+            <div class="footer__left">
+                <a class="footer__logo" href="">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="footer__text">IT-поддержка с заботой о людях</div>
+                <div class="footer__info">
+                    <span>ООО "ПрофИнфоСервис"</span>
+                    <span>ИНН: 0000000000</span>
+                    <span>КПП: 000000000</span>
+                    <span>ОГРН: 00000000000000</span>
+                </div>
+                <div class="footer__b2b">
+                    <span>Разработано в</span>
+                    <i>
+                        <img src="img/b2b-logo.svg" alt="">
+                    </i>
+                </div>
+                <div class="footer__politic">
+                    © Сайт не является публичной офертой. 2023г.
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <div class="footer__center">
+                <div class="footer__items">
+                    <div class="footer__items-left">
+                        <div class="footer__item">
+                            <div class="footer__subtitle">Главная</div>
+                            <ul>
+                                <li><a href="">Консалтинг и аудит</a></li>
+                                <li><a href="">Портфолио</a></li>
+                                <li><a href="">Контакты</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__subtitle">О компании</div>
+                            <ul>
+                                <li><a href="">Команда</a></li>
+                                <li><a href="">Офис</a></li>
+                                <li><a href="">Партнеры</a></li>
+                                <li><a href="">Вакансии</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__subtitle">IT-обслуживание</div>
+                            <ul>
+                                <li><a href="">Аутсорсинг</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer__items-right">
+                        <div class="footer__item">
+                            <div class="footer__subtitle">Системная интеграция</div>
+                            <ul>
+                                <li><a href="">Проектирование</a></li>
+                                <li><a href="">Поддержка инфраструктуры</a></li>
+                                <li><a href="">Поставки</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer__item">
+                            <div class="footer__subtitle">Облачные сервисы</div>
+                            <ul>
+                                <li><a href="">Аренда облака</a></li>
+                                <li><a href="">Аренда вычислительных мощностей</a></li>
+                                <li><a href="">Аренда 1С</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__subtitle">Контакты</div>
+               <div class="footer__grid">
+                   <div class="footer__group">
+                       <div class="footer__phone-wrap">
+                           <div class="footer__phone-text">Санкт-Петербург:</div>
+                           <a class="footer__phone" href="tel:78127048110">+7-812-704-81-10</a>
+                           <button class="footer__btn btn">
+                               <span>Заказать звонок</span>
+                           </button>
+                       </div>
+                       <div class="footer__address">197022, Россия , г.Санкт-Петербург, Набережная реки Карповки, д. 5, литер К</div>
+                   </div>
+                   <div class="footer__group">
+                       <div class="footer__phone-wrap">
+                           <div class="footer__phone-text">Москва:</div>
+                           <a class="footer__phone" href="tel:74994041840 ">+7-499-404-18-40 </a>
+                           <button class="footer__btn btn">
+                               <span>Заказать звонок</span>
+                           </button>
+                       </div>
+                       <div class="footer__address">127055, Россия , г.Москва, Новослободская улица, д 55к1, офис T-4</div>
+                   </div>
+                   <div class="footer__email-wrap">
+                       <div class="footer__email-text">E-mail:</div>
+                       <a href="mailto:info@profinfoservice.ru" class="footer__email">info@profinfoservice.ru</a>
+                   </div>
+                   <div class="footer__socials">
+                       <a class="footer__social" href="">
+                           <svg width="36" height="30" viewBox="0 0 36 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M15.8342 18.2373C14.7381 19.2215 14.0671 20.5929 13.9626 22.0623L13.6656 26.2396C13.5923 27.2707 14.46 28.0706 15.1935 27.3421C17.5045 25.1335 21.0667 24.9005 23.6458 26.7892L27.465 29.5861C28.983 30.4321 30.0525 29.9866 30.462 28.1896L35.8948 2.73266C35.8949 2.73198 35.8952 2.73136 35.8957 2.73087C35.8962 2.73038 35.8966 2.72974 35.8967 2.72906C36.3776 0.485844 35.0848 -0.391293 33.606 0.15912L1.67099 12.3856C-0.508508 13.2316 -0.475508 14.4466 1.30049 14.9971L5.08183 16.1733C7.86436 17.0388 10.886 16.6475 13.3563 15.1018L28.4295 5.67012C29.322 5.07912 30.1335 5.40612 29.466 5.99712L15.8342 18.2373Z" fill="#1397DE"/>
+                           </svg>
+                       </a>
+                       <a class="footer__social" href="">
+                           <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                               <path d="M18.0045 0H17.9955C8.07075 0 0 8.073 0 18C0 21.4148 0.954419 24.6129 2.61524 27.3347C3.09297 28.1176 3.25347 29.0668 2.96178 29.9363C2.22383 32.1361 4.29919 34.2412 6.50926 33.5347L6.74983 33.4578C7.60481 33.1845 8.53053 33.327 9.31555 33.7622C11.894 35.1917 14.8507 36 18.0045 36C27.9292 36 36 27.9247 36 18C36 8.07525 27.9292 0 18.0045 0ZM28.4782 25.4182C28.044 26.6445 26.3205 27.6615 24.9457 27.9585C24.0052 28.1587 22.7768 28.3185 18.6413 26.604C13.3515 24.4125 9.945 19.0372 9.6795 18.6885C9.42525 18.3398 7.542 15.8422 7.542 13.2593C7.542 10.6763 8.85375 9.4185 9.3825 8.8785C9.81675 8.43525 10.5345 8.23275 11.223 8.23275C11.4458 8.23275 11.646 8.244 11.826 8.253C12.3547 8.2755 12.6202 8.307 12.969 9.14175C13.4032 10.188 14.4607 12.771 14.5868 13.0365C14.715 13.302 14.8433 13.662 14.6632 14.0108C14.4945 14.3708 14.346 14.5305 14.0805 14.8365C13.815 15.1425 13.563 15.3765 13.2975 15.705C13.0545 15.9908 12.78 16.2968 13.086 16.8255C13.392 17.343 14.4495 19.0687 16.0065 20.4548C18.0157 22.2435 19.6447 22.815 20.2275 23.058C20.6617 23.238 21.1793 23.1953 21.4965 22.8577C21.8993 22.4235 22.3965 21.7035 22.9028 20.9948C23.2628 20.4862 23.7173 20.4232 24.1943 20.6032C24.6803 20.772 27.252 22.0432 27.7808 22.3065C28.3095 22.572 28.6582 22.698 28.7865 22.9207C28.9125 23.1435 28.9125 24.1898 28.4782 25.4182Z" fill="#1397DE"/>
+                           </svg>
+                       </a>
+                   </div>
+                   <a href="" class="yandex-rating">
+                       <img src="img/yandex-rating.svg" alt="">
+                   </a>
+               </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+	</div>
+	<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/base.min.js"></script>
+<script src="https://degorov.ru/1base/wp-content/themes/Goodini/assets/js/validate.min.js"></script>
+<script src="js/nouislider.js"></script>
+<script src="js/lazysizes.min.js"></script>
+<script src="js/main.min.js"></script>
+
+
+	<script>
+		const displayWindowSize = () => {
+
+			const StartWindowHeight = window.innerHeight;
+			const windowWidth = window.innerWidth;
+			const windowHeight = window.innerHeight;
+
+			const ratio_default = 1.98;
+			const ratio_current = windowWidth / windowHeight;
+			const coef_ratio = (ratio_default / ratio_current).toFixed(2);
+			const coef_height = (Math.max(windowHeight / 775, 0.78)).toFixed(2);
+			const coef_width = (Math.min(coef_ratio * 1.07, 0.95)).toFixed(2);
+
+			if ((StartWindowHeight !== windowHeight) && (navigator.platform !== 'iPhone' && navigator.platform !== 'iPad')) {
+				document.body.classList.add("keyboard-on");
+			} else {
+				document.body.classList.remove("keyboard-on");
+			}
+
+			if (coef_ratio < 1) {
+				document.documentElement.style.setProperty('--coef_r', coef_ratio);
+			}
+			if (coef_height < 1) {
+				document.documentElement.style.setProperty('--coef_h', coef_height);
+			}
+			if (coef_width < 1) {
+				document.documentElement.style.setProperty('--coef_w', coef_width);
+			}
+		};
+
+		window.addEventListener("resize", displayWindowSize);
+
+		// Инициализация функции отображения размера окна
+		displayWindowSize();
+	</script>
+
+</body>
+
+</html>
