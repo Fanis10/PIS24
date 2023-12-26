@@ -262,8 +262,8 @@
 									<div class="info2__images">
 										<img class="lazyload info2__img right-animation _anim-items anim-no-hide" data-src="img/info2-img.webp" alt="">
 										<div class="info2__img2 top-animation _anim-items anim-no-hide">
-											<img class="lazyload" data-src="img/info2-img2.webp" alt="">
 											<img class="lazyload" data-src="img/info2-img2-2.webp" alt="">
+											<img class="lazyload" data-src="img/info2-img2.webp" alt="">
 										</div>
 									</div>
 									<div class="info2__desc">
@@ -313,25 +313,48 @@
 										<div class="calculator__ranges">
 											<div class="calculator__range">
 												<div class="calculator__range-title">Количество рабочих мест</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider"></div>
-													<div class="range-number">0</div>
+												<div class="_range-block" data-min="0" data-max="500" data-pips="20" data-pips2="100" data-pips3="180" data-pips4="260" data-pips5="340" data-pips6="420" data-pips7="500">
+													<div class="range-slider"></div>
+													<input class="range-input range" type="number">
 												</div>
 											</div>
 											<div class="calculator__range">
 												<div class="calculator__range-title">Количество серверов</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider2"></div>
-													<div class="range-number2">0</div>
+												<div class="_range-block" data-min="0" data-max="60" data-pips="0" data-pips2="10" data-pips3="20" data-pips4="30" data-pips5="40" data-pips6="50" data-pips7="60">
+													<div class="range-slider"></div>
+													<input class="range-input" type="number">
 												</div>
 											</div>
 											<div class="calculator__range">
 												<div class="calculator__range-title">Количество оргтехники</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider3"></div>
-													<div class="range-number3">0</div>
+												<div class="_range-block" data-min="0" data-max="60" data-pips="0" data-pips2="10" data-pips3="20" data-pips4="30" data-pips5="40" data-pips6="50" data-pips7="60">
+													<div class="range-slider"></div>
+													<input class="range-input" type="number">
 												</div>
 											</div>
+
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Количество рабочих мест</div>-->
+<!--												<div class="calculator__range-wrap" data-min="0" data-max="100">-->
+<!--													<div id="range-slider"></div>-->
+<!--													<div class="range-number"></div>-->
+<!--&lt;!&ndash;													<input class="range-number" type="number">&ndash;&gt;-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Количество серверов</div>-->
+<!--												<div class="calculator__range-wrap">-->
+<!--													<div id="range-slider2"></div>-->
+<!--													<div class="range-number2">0</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Количество оргтехники</div>-->
+<!--												<div class="calculator__range-wrap">-->
+<!--													<div id="range-slider3"></div>-->
+<!--													<div class="range-number3">0</div>-->
+<!--												</div>-->
+<!--											</div>-->
 										</div>
 									</div>
 									<div class="calculator__right">
@@ -342,7 +365,7 @@
 											</div>
 											<div class="calculator__img2">
 												<img class="lazyload" data-src="img/calculator-img2.webp" alt="">
-												<div class="range-number-1">0</div>
+												<div class="range-number">0</div>
 											</div>
 											<div class="calculator__img3">
 												<img class="lazyload" data-src="img/calculator-img3.webp" alt="">
@@ -352,60 +375,60 @@
 										<div class="calculator__price">
 											<div class="calculator__price-title">Стоимость обслуживания составит:</div>
 											<div class="calculator__price-number">
-												<span>60 000</span> руб.
+												<span class="total">0</span> руб.
 											</div>
 										</div>
 									</div>
 								</div>
-								<div data-content-path="2" class="calculator__wrap tab__content">
-									<div class="calculator__left">
-										<div class="calculator__ranges">
-											<div class="calculator__range">
-												<div class="calculator__range-title">Сроки строительства</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider4"></div>
-													<div class="range-number4">0</div>
-												</div>
-											</div>
-											<div class="calculator__range">
-												<div class="calculator__range-title">Количество рабочих мест</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider5"></div>
-													<div class="range-number5">0</div>
-												</div>
-											</div>
-											<div class="calculator__range">
-												<div class="calculator__range-title">Бюджет проекта</div>
-												<div class="calculator__range-wrap">
-													<div id="range-slider6"></div>
-													<div class="range-number6">0</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="calculator__right">
-										<div class="calculator__images">
-											<div class="calculator__img">
-												<img class="lazyload" data-src="img/calculator-img4.webp" alt="">
-												<div class="range-number4-1">0</div>
-											</div>
-											<div class="calculator__img2">
-												<img class="lazyload" data-src="img/calculator-img2.webp" alt="">
-												<div class="range-number5-1">0</div>
-											</div>
-											<div class="calculator__img3">
-												<img class="lazyload" data-src="img/calculator-img5.webp" alt="">
-												<div class="range-number6-1">0</div>
-											</div>
-										</div>
-										<div class="calculator__price">
-											<div class="calculator__price-title">Стоимость обслуживания составит:</div>
-											<div class="calculator__price-number">
-												<span>60 000</span> руб.
-											</div>
-										</div>
-									</div>
-								</div>
+<!--								<div data-content-path="2" class="calculator__wrap tab__content">-->
+<!--									<div class="calculator__left">-->
+<!--										<div class="calculator__ranges">-->
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Сроки строительства</div>-->
+<!--												<div class="calculator__range-wrap">-->
+<!--													<div id="range-slider4"></div>-->
+<!--													<div class="range-number4">0</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Количество рабочих мест</div>-->
+<!--												<div class="calculator__range-wrap">-->
+<!--													<div id="range-slider5"></div>-->
+<!--													<div class="range-number5">0</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__range">-->
+<!--												<div class="calculator__range-title">Бюджет проекта</div>-->
+<!--												<div class="calculator__range-wrap">-->
+<!--													<div id="range-slider6"></div>-->
+<!--													<div class="range-number6">0</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--									<div class="calculator__right">-->
+<!--										<div class="calculator__images">-->
+<!--											<div class="calculator__img">-->
+<!--												<img class="lazyload" data-src="img/calculator-img4.webp" alt="">-->
+<!--												<div class="range-number4-1">0</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__img2">-->
+<!--												<img class="lazyload" data-src="img/calculator-img2.webp" alt="">-->
+<!--												<div class="range-number5-1">0</div>-->
+<!--											</div>-->
+<!--											<div class="calculator__img3">-->
+<!--												<img class="lazyload" data-src="img/calculator-img5.webp" alt="">-->
+<!--												<div class="range-number6-1">0</div>-->
+<!--											</div>-->
+<!--										</div>-->
+<!--										<div class="calculator__price">-->
+<!--											<div class="calculator__price-title">Стоимость обслуживания составит:</div>-->
+<!--											<div class="calculator__price-number">-->
+<!--												<span>60 000</span> руб.-->
+<!--											</div>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
 								<div class="calculator__bottom">
 									<div class="calculator__group">
 										<a class="calculator__btn btn btn-blue" href="">
@@ -429,7 +452,7 @@
 						<div class="services__inner">
 							<div class="services__top">
 								<h2>Услуги и компетенции</h2>
-								<p>Делегируя IT, вы освобождаете время для стратегических бизнес-решений</p>
+								<p class="subtitle">Делегируя IT, вы освобождаете время для стратегических бизнес-решений</p>
 							</div>
 							<div class="services__cards left-animation _anim-items anim-no-hide">
 								<div class="services-card">
@@ -884,7 +907,7 @@
 						<div class="staff__inner">
 							<div class="staff__top">
 								<h2>Ключевые лица компании</h2>
-								<p>У каждого более 20 лет корпоративного опыта в IT и не менее 2-х высших образований</p>
+								<p class="subtitle">У каждого более 20 лет корпоративного опыта в IT и не менее 2-х высших образований</p>
 							</div>
 							<div class="staff__cards">
 								<div class="staff-card right-animation _anim-items anim-no-hide">
@@ -894,8 +917,8 @@
 									<div class="staff-card__desc">
 										<div class="staff-card__text">
 											<strong>Вадим Куракин</strong>
-											<span>Основатель, руководитель направления</span>
-											<span>консалтинга и аудита</span>
+											<br>
+											<span>Основатель, руководитель направления консалтинга и аудита</span>
 										</div>
 										<div class="staff-card__text2">
 											<p>
@@ -923,8 +946,8 @@
 									<div class="staff-card__desc">
 										<div class="staff-card__text">
 											<strong>Дмитрий Радкевич</strong>
-											<span>Генеральный директор, руководитель</span>
-											<span>направления системной интеграции</span>
+											<br>
+											<span>Генеральный директор, руководитель направления системной интеграции</span>
 										</div>
 										<div class="staff-card__text2">
 											<p>
@@ -952,8 +975,8 @@
 									<div class="staff-card__desc">
 										<div class="staff-card__text">
 											<strong>Юрий Кузнецов</strong>
-											<span>Руководитель направления IT-аутсорсинга</span>
-											<span>(обслуживание и техподдержка)</span>
+											<br>
+											<span>Руководитель направления IT-аутсорсинга (обслуживание и техподдержка)</span>
 										</div>
 										<div class="staff-card__text2">
 											<p>
@@ -983,10 +1006,8 @@
 					<div class="container-fluid">
 						<div class="philosophy__inner">
 							<h2>Наша философия - <br> IT CARE FOR PEOPLE</h2>
-							<div class="philosophy__text">
-								<p>Мы уверены, что всем людям, от генерального директора до рядового сотрудника, должно быть удобно пользоваться вычислительной техникой. Компьютеры существуют для людей, а не наоборот.</p>
-								<p>Заботливое АйТи для людей - для нас не просто слова, это наши устремления и ежедневный усердный труд.</p>
-							</div>
+							<p>Мы уверены, что всем людям, от генерального директора до рядового сотрудника, должно быть удобно пользоваться вычислительной техникой. Компьютеры существуют для людей, а не наоборот.</p>
+							<p>Заботливое АйТи для людей - для нас не просто слова, это наши устремления и ежедневный усердный труд.</p>
 							<a class="philosophy__btn btn btn-blue" href="">
 								<span>Подробнее о компании</span>
 							</a>
@@ -1043,7 +1064,7 @@
 				<div class="container-fluid">
 					<div class="feedback__inner">
 						<h2>Живые отзывы о нас</h2>
-						<div style="overflow:hidden;position:relative;"><iframe class="lazyload" style="width:100%;height:100%;border:1px solid #e6e6e6;border-radius:8px;box-sizing:border-box" data-src="https://yandex.ru/maps-reviews-widget/169713910996?comments"></iframe><a href="https://yandex.ru/maps/org/b2b_creative/169713910996/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">B2B-Creative на карте Казани — Яндекс Карты</a></div>
+						<div style="overflow:hidden;position:relative;"><iframe class="lazyload" style="width:100%;height:100%;border:1px solid #e6e6e6;box-sizing:border-box" data-src="https://yandex.ru/maps-reviews-widget/165656056212?comments"></iframe><a href="https://yandex.ru/maps/org/profinfoservice/165656056212/" target="_blank" style="box-sizing:border-box;text-decoration:none;color:#b3b3b3;font-size:10px;font-family:YS Text,sans-serif;padding:0 20px;position:absolute;bottom:8px;width:100%;text-align:center;left:0;overflow:hidden;text-overflow:ellipsis;display:block;max-height:14px;white-space:nowrap;padding:0 16px;box-sizing:border-box">ProfInfoService на карте Санкт‑Петербурга — Яндекс Карты</a></div>
 					</div>
 				</div>
 				<div class="feedback__text">
