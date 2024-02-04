@@ -287,19 +287,24 @@
 			<a class="sidebar__logo" href="">
 				<img src="img/logo.svg" alt="">
 			</a>
-			<form method="POST" class="sidebar-form__block">
+			<div class="sidebar-form__wrap">
 				<div class="sidebar-form__left">
 					<h3>Cкачать программу удаленного администрирования</h3>
-					<h3>ProfInfoService <br> Connect</h3>
-					<div class="sidebar-form__subtitle">Памятка по обращению <br> в Helpdesk</div>
-					<a class="sidebar-form__link btn btn-blue" href="">
+					<a href="" class="sidebar-form__link">ProfInfoService <br> Connect</a>
+					<a href="" class="sidebar-form__link2">Памятка по обращению <br> в Helpdesk</a>
+					<button class="sidebar-form__ip btn btn-blue">
 						<span>УЗНАТЬ МОЙ IP</span>
-					</a>
+						<span>
+							Внешний - 188.114.48.23
+							<br>
+							Внутренний - 192.168.116.6
+						</span>
+					</button>
 					<a class="sidebar-form__politics" href="">
 						<span>Политика конфиденциальности</span>
 					</a>
 				</div>
-				<div class="sidebar-form__right">
+				<form method="POST" class="sidebar-form__right sidebar-form__block">
 					<h2>Отправить заявку в сервис деск</h2>
 					<div class="sidebar-form__grid">
 						<div class="form-field form-group">
@@ -351,8 +356,8 @@
 							<label class="agreement-label">Подтверждаю свои данные и даю своё согласие на их обработку</label>
 						</div>
 					</div>
-				</div>
-			</form>
+				</form>
+			</div>
 		</div>
 
 		<main class="content">
